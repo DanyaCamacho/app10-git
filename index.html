@@ -1,0 +1,833 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>App10 Submódulo de BD Simples y BD avanzadas.</title>
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<!-- grupo CSS -->
+<link rel="stylesheet" href="css/tema10.min.css"/>
+<link rel ="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel= "stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+<!-- grupo JavaScript -->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<!--<script src="js/acciones.js" type="text/javascript"></script>-->
+
+<script src="phonegap.js"></script><!-- necesario/-->
+
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+<body onLoad="MM_preloadImages('imagenes/b8.jpg','imagenes/b22.png','imagenes/b24.png','imagenes/b25.jpg','imagenes/2.jpg','imagenes/4.png','imagenes/7.png')">
+<div data-role="page" id="Principal" data-theme="a">
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1> Aplicación 10 Submódulo de BD Simples y BD avanzadas </h1>
+  </div>
+ <div data-role="main" class="ui-content" align="center">
+<div style="width:90%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" data-role="button">
+<h2> Bases de Datos Simples  </h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" data-role="button">
+<h2> Bases de Datos Avanzadas </h2>
+</a>
+</li>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false" align="center">
+<h1> Las Bases De Datos </h1>
+<div>
+
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/b8.jpg" alt="b8" title="b8" id="wows1_0"/></li>
+		<li><img src="data1/images/b9.jpg" alt="b9" title="b9" id="wows1_1"/></li>
+		<li><img src="data1/images/b1.jpg" alt="b1" title="b1" id="wows1_2"/></li>
+		<li><img src="data1/images/b5.png" alt="b5" title="b5" id="wows1_3"/></li>
+		<li><img src="data1/images/b4.jpg" alt="b4" title="b4" id="wows1_4"/></li>
+		<li><img src="data1/images/b6.jpg" alt="b6" title="b6" id="wows1_5"/></li>
+		<li><img src="data1/images/b2.png" alt="b2" title="b2" id="wows1_6"/></li>
+		<li><img src="data1/images/b3.png" alt="b3" title="b3" id="wows1_7"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/b7.jpg" alt="wowslider.com" title="b7" id="wows1_8"/></a></li>
+		<li><img src="data1/images/b10.jpg" alt="b10" title="b10" id="wows1_9"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="b8"><span><img src="data1/tooltips/b8.jpg" alt="b8"/>1</span></a>
+		<a href="#" title="b9"><span><img src="data1/tooltips/b9.jpg" alt="b9"/>2</span></a>
+		<a href="#" title="b1"><span><img src="data1/tooltips/b1.jpg" alt="b1"/>3</span></a>
+		<a href="#" title="b5"><span><img src="data1/tooltips/b5.png" alt="b5"/>4</span></a>
+		<a href="#" title="b4"><span><img src="data1/tooltips/b4.jpg" alt="b4"/>5</span></a>
+		<a href="#" title="b6"><span><img src="data1/tooltips/b6.jpg" alt="b6"/>6</span></a>
+		<a href="#" title="b2"><span><img src="data1/tooltips/b2.png" alt="b2"/>7</span></a>
+		<a href="#" title="b3"><span><img src="data1/tooltips/b3.png" alt="b3"/>8</span></a>
+		<a href="#" title="b7"><span><img src="data1/tooltips/b7.jpg" alt="b7"/>9</span></a>
+		<a href="#" title="b10"><span><img src="data1/tooltips/b10.jpg" alt="b10"/>10</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">wowslider.net</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+</div>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+ 
+
+<li class="ui-first-child ui-last-child ui-group-theme-b">
+<a href="#Pagina3" data-role="button">
+<h2> Datos Del Diseñador </h2>
+</a>
+</li>
+
+
+</ul>
+</div>
+</div>
+
+
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <h4> Aplicación 10 CCJD </h4>
+   <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+ </div>
+ 
+</div>
+
+<!--BASES DE DATOS SIMPLES-->
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="c">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+<h1> Aplicación 10 Submódulo de BD Simples</h1>
+</div>
+
+  <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false" align="center">
+<h1> ¿Qué es una Base de Datos? </h1>
+<div>
+<p> <b> Se define una base de datos como una serie de datos organizados y relacionados entre sí, los cuales son recolectados y explotados por los sistemas de información de una empresa o negocio en particular.</b>
+  <br>
+  <br>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image57','','imagenes/b25.jpg',1)"><img src="imagenes/b1.jpg" width="70%" height="50%" id="Image57"></a> </p>
+ <h3> Características </h3>
+ <p> Independencia lógica y física de los datos.</p>
+<p>Redundancia mínima.</p>
+<p>Acceso concurrente por parte de múltiples usuarios.</p>
+<p>Integridad de los datos.</p>
+<p>Consultas complejas optimizadas. </p>
+<img src="imagenes/b2.png" width="50%" height="30%">
+<br>
+</div>
+</div>
+</div>
+
+<div> 
+ <ul data-role="listview" data-theme="c" class="ui-listview ui-group-theme-c">
+  
+   <li class="ui-first-child ui-last-child">
+  <a href="#Pag2Simples" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2> Modelo de Datos </h2>
+  <p> Conoce los distintos modelos de Bases de Datos. </p>
+  </a>
+  </li>
+  
+   <li class="ui-first-child ui-last-child">
+  <a href="#Pag3Simples" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2> Estructura de una Base de Datos y Tipos de Relación. </h2>
+  <p> ¿Cómo se conforma una Base de Datos y qué Tipos de Relación tiene? </p>
+  </a>
+  </li>
+  
+  
+   <li class="ui-first-child ui-last-child">
+  <a href="#Pag5Simples" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2> Las Propiedades de Tablas y Campos </h2>
+  <p>Lo que debes conocer. </p>
+  </a>
+  </li>
+  
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pag6Simples" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2> Tipos De Datos </h2>
+  <p> Uso adecuado de tus datos en los campos. </p>
+  </a>
+  </li>
+  
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pag4Simples" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2> Creación de una Base de Datos  </h2>
+  <p> Pasos Para Crear Una Base De Datos en Microsoft Access. </p>
+  </a>
+  </li>
+  
+   <li class="ui-first-child ui-last-child">
+  <a href="#Pag7Simples" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2> Creación de Relaciones en una Base de Datos  </h2>
+  <p> Pasos Para Crear Una Relación De Tablas en Microsoft Access, </p>
+  </a>
+  </li>
+  
+  </ul>
+  </div>
+  
+
+ <div data-role="footer" align="center" data-theme="c" data-position="fixed">
+ <h4>App10 Jesús Danyael Camacho Carreto </h4>
+ <img src="res/android/slide.png" width="56" height="46">
+ </div>
+ </div>
+
+ 
+<div data-role="page" id="Pag2Simples" data-add-back-btn="true" data-theme="b">
+ 	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1> MODELO DE DATOS </h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <H2> ¿Qué es un Modelo de Base de Datos?</H2>
+ 
+ <p> Un modelo de base de datos muestra la estructura lógica de la base, incluidas las relaciones y limitaciones que determinan cómo se almacenan los datos y cómo se accede a ellos.  
+ </p>
+ 
+ <h2> Tipos de modelos de bases de datos </h2>
+ 
+ <div align="center">
+<img src="imagenes/b3.png" width="70%" height="50%">
+</div>
+ 
+<p>Hay muchos tipos de modelos de bases de datos. Algunos de los más comunes incluyen:</p>
+
+<ul>
+<li>Modelo de base de datos jerárquico</li>
+<p>El modelo jerárquico organiza los datos en una estructura de árbol, en la que cada registro tiene un único elemento o raíz. Los registros del mismo nivel se clasifican en un orden específico.</p> 
+
+<div align="center">
+<img src="imagenes/b4.jpg" width="70%" height="50%">
+</div>
+<br>
+
+<li> Modelo relacional</li>
+<P>Siendo el modelo más común, el modelo relacional ordena los datos en tablas, también conocidas como relaciones, cada una de las cuales se compone de columnas y filas.</P>
+
+<p> En conjunto, a los atributos en una relación se les llama dominio.</p>
+
+<div align="center">
+<img src="imagenes/b5.png" width="70%" height="50%">
+</div>
+<br>
+
+<li>Modelo de base de datos orientado a objetos</li>
+<p>Este modelo define una base de datos como una colección de objetos, o elementos de software reutilizables, con funciones y métodos relacionados.</p>
+
+<p> El modelo de base de datos orientado a objetos es el mejor modelo conocido de base de datos posrelacional ya que incorpora tablas, pero no se limita a ellas. A dichos modelos también se los conoce como modelos de base de datos híbridos.</p>
+
+<div align="center">
+<img src="imagenes/b6.jpg" width="60%" height="50%">
+</div>
+<br>
+
+<li>Modelo de Red </li>
+<p>El modelo de red se basa en el modelo jerárquico, permitiendo relaciones de muchos a muchos entre registros vinculados, lo que implica registros principales múltiples. Basado en la teoría matemática de conjuntos, el modelo se construye con conjuntos de registros relacionados.</p>
+<div align="center">
+<img src="imagenes/b7.jpg" width="70%" height="50%">
+</div>
+<br>
+
+</ul>
+ 
+ </div>
+ </div>
+ 
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+ <h4>App10 Jesús Danyael Camacho Carreto </h4>
+ <img src="res/android/slide.png" width="56" height="46">
+ </div>
+ </div>
+  
+  <div data-role="page" id="Pag3Simples" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1> Estructura de una BD Relacional y Tipos de Relación.</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <p> Una base de datos relacional consiste en un conjunto de tablas, a cada una de las cuales se le asigna un nombre exclusivo. Cada fila de la tabla representa una relación entre un conjunto de valores. Dado que cada tabla es un conjunto de dichas relaciones, hay una fuerte correspondencia entre el concepto de tabla y el concepto matemático de relación, del que toma su nombre el modelo de datos relacional. </p>
+ 
+ <h2>Estructura básica</h2>
+ <ul>
+ <li>TABLAS: son esencialmente relaciones.</li>
+<hr align="center" size="1%" color="#FFFFFF" width="20%"> 
+<li>ATRIBUTOS: son las cabeceras de las tablas.</li>
+<hr align="center" size="1%" color="#FFFFFF" width="20%">
+<li>DOMINIO: es el conjunto de valores que toma un atributo.</li>
+<hr align="center" size="1%" color="#FFFFFF" width="25%">
+<li>TUPLAS: son cada una de las líneas que contiene una tabla.</li>
+<hr align="center" size="1%" color="#FFFFFF" width="25%">
+<li>CLAVE PRIMARIA: atributo o conjunto de atributos de una relación que identifican inequívocamente a una tupla.</li>
+<b>Requisitos para que una clave primaria lo sea:</b> 
+<br>
+<br>
+ Unicidad: el valor de la clave primaria de una tupla, no se puede repetir. <br>
+Minimalidad: si el PK (Primary Key) es compuesto, no se podrá eliminar ninguno de sus componentes.
+<hr align="center" size="1%" color="#FFFFFF" width="45%">
+<li> CLAVE FORÁNEA O EXTERNA: atributo o conjunto de atributos que son clave primaria en otra relación o tabla. </li>
+<hr align="center" size="1%" color="#FFFFFF" width="50%">
+
+<br>
+
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','imagenes/b8.jpg',1)"><img src="imagenes/b9.jpg" width="70%" height="50%" id="Image23"></a>
+
+<h2> Tipos de Relación </h2>
+<p>Existen tres tipos de elaciones, que son: uno a uno, una a varios y varios a varios. En la Base de Datos las relaciones del tipo varios a varios no pueden ser expresadas, por lo que deben ser remodelizadas.</p>
+
+<p> Por Ejemplo: </p>
+
+<h3> Relaciones uno a uno </h3>
+En una relación uno a uno, cada registro de la Tabla MATERIA sólo puede tener un registro coincidente en la Tabla PROFESOR y viceversa. En este ejemplo se está representando que cada materia solamente puede ser dada por un profesor.
+<img src="imagenes/b10.gif" width="70%" height="50%">
+
+<h3> Relaciones uno a varios </h3>
+<p> En este modelo se representa que mas de un PROFESOR puede dictar la misma MATERIA.
+En la relación uno a varios un registro de la Tabla MATERIA puede tener muchos registros coincidentes en la Tabla PROFESOR, pero un registro de la Tabla PROFESOR sólo tiene un registro coincidente en la Tabla MATERIA. </p>
+<img src="imagenes/b11.gif" width="70%" height="50%">
+
+<h3> Relación varios a varios </h3>
+<p> En una relación varios a varios, un registro de la Tabla A puede tener muchos registros coincidentes en la Tabla B y viceversa. Este tipo de relación sólo es posible si se define una tercera tabla (denominada tabla de unión), cuya clave principal consta de al menos dos campos; y que además, estos campos, correspondan a las claves externas de las Tablas A y B.  </p>
+</ul>
+
+<img src="imagenes/b12.gif" width="70%" height="50%">
+
+<ul data-role="controlgroup" data-type="vertical" data-theme="d">
+ <li class="ui-first-child ui-last-child">
+ <a href="http://www.cyta.com.ar/elearn/bd/2_presentaciones_1.htm" target="_self" data-role="button"> Click Aquí Para Más Ejemplos </a> </li>
+
+</ul>
+
+</div>
+</div>
+
+
+ 
+<div data-role="footer" align="center" data-theme="b" data-position="fixed">
+ <h4>App10 Jesús Danyael Camacho Carreto </h4>
+ <img src="res/android/slide.png" width="56" height="46">
+ </div>
+ </div>
+
+ 
+<div data-role="page" id="Pag4Simples" data-add-back-btn="true" data-theme="b">
+ 	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1> Creación de una Base de Datos </h1>
+ </div>
+
+
+ <div data-role="content" align="center">
+ <div>
+ <p>Al abrir Access, la vista Backstage muestra la pestaña Nuevo. La pestaña Nuevo ofrece varias formas de crear una base de datos, nosotros escogeremos:<i> "Base de datos en blanco"</i></p>
+ 
+ <img src="imagenes/b13.png" width="50%" height="55%">
+ 
+<p> Después escriba un nombre de archivo en el cuadro <i>"Nombre de archivo"</i>,entonces haga clic en <i>"Crear"</i> y Access crea la base de datos con una tabla vacía denominada <i>"Tabla1"</i>.</p>
+
+<img src="imagenes/b14.jpg" width="70%" height="40%">
+
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false" align="center">
+<h1> Creación de una Tabla Empezando en la Vista Diseño </h1>
+<div>
+<p>1.-En el grupo Tablas de la pestaña Crear, haga clic en Diseño de la tabla.</p>
+
+<img src="imagenes/b15.png" width="60%" height="40%">
+
+<p>2.-Para cada campo de la tabla, escriba un nombre en la columna Nombre de campo y seleccione un tipo de datos en la lista Tipo de datos.</p>
+
+<img src="imagenes/b16.jpg" width="60%" height="40%">
+
+<p>3.(OPCIONAL) Puede escribir una descripción de cada campo en la columna Descripción. La descripción se muestra después en la barra de estado de la vista Hoja de datos al situar el cursor en ese campo.</p>
+
+<img src="imagenes/b17.jpg" width="60%" height="40%">
+
+<p>4.-Tras haber agregado todos los campos, guarde la tabla:</p>
+<ul> 
+<li> En la pestaña Archivo, haga clic en Guardar.</li>
+<img src="imagenes/b18.png" width="80%" height="40%">
+</ul>
+
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+ <li class="ui-first-child ui-last-child">
+ <a href="https://support.office.com/es-es/article/Crear-una-base-de-datos-32a1ea1c-a155-43d6-aa00-f08cd1a8f01e" target="_self" data-role="button"> Click Aquí Para Información Más Detallada </a> </li>
+
+</ul>
+</div>
+</div>
+</div>
+
+ 
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+ <h4>App10 Jesús Danyael Camacho Carreto </h4>
+ <img src="res/android/slide.png" width="56" height="46">
+ </div>
+ </div>
+ </div>
+ 
+<div data-role="page" id="Pag5Simples" data-add-back-btn="true" data-theme="b">
+ 	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1> PROPIEDADES DE TABLAS Y CAMPOS </h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ 
+ <P> Las tablas y los campos también tienen propiedades que puede establecer para controlar sus características o su comportamiento.</P>
+ 
+ <img src="imagenes/b19.gif" width="80%" height="40%">
+ 
+ <p> 1. Propiedades de tabla </p>
+<p>2. Propiedades de campo</p>
+<P> En una base de datos de Access, las propiedades de tabla son atributos de una tabla que afectan a la apariencia o al comportamiento de la tabla como un todo. Las propiedades de la tabla se establecen en la hoja de propiedades de tabla, en la vista Diseño. </p>
+
+ 
+ </div>
+ </div>
+ 
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+ <h4>App10 Jesús Danyael Camacho Carreto </h4>
+ <img src="res/android/slide.png" width="56" height="46">
+ </div>
+ </div>
+
+
+<div data-role="page" id="Pag6Simples" data-add-back-btn="true" data-theme="b">
+ 	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1> Tipos De Datos</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+
+<p>Cada campo tiene un tipo de datos. El tipo de datos de un campo indica el tipo de datos que almacena el campo, como una gran cantidad de texto o archivos adjuntos.</p>
+
+<p>1. Texto: Se utiliza para introducir datos que incluyan texto, valores numéricos que no requieran cálculos matemáticos o combinación de texto y números. Acepta un máximo de 255 caracteres. </p>
+
+<p>2. Número: Datos numéricos que vayan a ser utilizados para realizar cálculos matemáticos. </p>
+
+
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image36','','imagenes/b22.png',1)"><img src="imagenes/b21.png" width="70%" height="30%" id="Image36"></a> 
+ 
+ <p>3. Fecha/Hora: Es importante utilizar este tipo para introducir datos de fecha, del año 100 al año 9999.</p>
+ 
+ <p> 4. Moneda: Ideal para datos numéricos que representen valores en moneda, que vayan a utilizarse para cálculos matemáticos y que necesitemos que lo preceda el signo de moneda. Acepta hasta 15 dígitos para la parte entera del número y hasta 4 dígitos en su parte decimal. </p>
+ 
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image37','','imagenes/b24.png',1)"><img src="imagenes/b23.png" width="70%" height="30%" id="Image37"></a>
+
+
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+ <li class="ui-first-child ui-last-child">
+ <a href="https://support.office.com/es-es/article/Introducción-a-los-tipos-de-datos-y-las-propiedades-de-los-campos-30ad644f-946c-442e-8bd2-be067361987c" target="_self" data-role="button"> Click Aquí Para Conocer más tipos de Datos </a> </li>
+
+</ul>
+
+</div>
+ </div>
+<div data-role="footer" align="center" data-theme="b" data-position="fixed">
+
+  <h4>App10 Jesús Danyael Camacho Carreto </h4>
+ <img src="res/android/slide.png" width="56" height="46">
+ </div>
+ </div>
+ 
+<div data-role="page" id="Pag7Simples" data-add-back-btn="true" data-theme="b">
+ 	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1> Creación de Relaciones en Tablas</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+
+<p>En el grupo Mostrar u ocultar de la pestaña Herramientas de base de datos, haga clic en Relaciones.</p>
+
+<p>En el cuadro de diálogo Mostrar tabla se muestran todas las tablas y consultas de la base de datos, para ver únicamente las tablas, haga clic en Tablas. 
+Cuando termine de agregar tablas y consultas a la ventana Relaciones, haga clic en Cerrar.</p>
+ 
+<p>Arrastre un campo (normalmente el campo de clave principal) de una tabla al campo común (la clave externa) en la otra tabla. Para arrastrar varios campos, presione la tecla CTRL, haga clic en cada uno de los campos y, a continuación, arrástrelos.
+</p>
+
+<p>Cuando aparece el cuadro de diálogo Modificar relaciones, compruebe que los nombres de campo mostrados son los campos comunes de la relación. Si un nombre de campo es incorrecto, haga clic en él y seleccione un nuevo campo de la lista.
+(VEA EL COLLAPSIBLE)
+</p>
+
+<img src="imagenes/b26.png" width="70%" height="60%">
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false" align="center">
+<h1> Integridad Referencial </h1>
+<div>
+<p>El propósito de la integridad referencial es evitar los registros huérfanos y mantener las referencias sincronizadas para que esta situación hipotética no ocurra nunca.</p>
+
+<p>Siguiendo esto para nuestra creación de relación de nuestras tablas tenemos que:</p>
+
+<p>Para exigir la integridad referencial de esta relación, active la casilla de verificación "Exigir integridad referencial". </p>
+
+<p>Haga clic en Crear.</p>
+
+<p>Se dibujará una línea de relación entre las dos tablas. Si activó la casilla de verificación Exigir integridad referencial, la línea aparecerá más gruesa en los extremos. Además, sólo si activó la casilla de verificación Exigir integridad referencial, aparecerá el número 1 sobre la parte gruesa de un extremo de la línea de relación y aparece el símbolo de infinito (∞) sobre la parte gruesa del otro extremo.</p>
+
+<img src="imagenes/b27.jpg" width="50%" height="70%">
+
+</div>
+</div>
+</div>
+
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+ <li class="ui-first-child ui-last-child">
+ <a href="https://support.office.com/es-es/article/Guía-de-relaciones-de-tablas-30446197-4FBE-457B-B992-2F6FB812B58F" target="_self" data-role="button"> Click Aquí Para Saber más Acerca de Relaciones de Tablas </a> </li>
+
+</ul>
+
+
+
+
+</div>
+ </div>
+<div data-role="footer" align="center" data-theme="b" data-position="fixed">
+
+  <h4>App10 Jesús Danyael Camacho Carreto </h4>
+ <img src="res/android/slide.png" width="56" height="46">
+ </div>
+ </div>
+
+
+
+
+<!--BASES DE DATOS AVANZADAS-->
+
+<div data-role="page" id="Pagina2"data-add-back-btn="true" data-theme="c">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+<h1> Aplicación 10 Submódulo de BD Avanzadas</h1>
+</div>
+
+  <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false" align="center">
+<h1> Normalización De Las Bases De Datos </h1>
+<div>
+
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container2">
+<div class="ws_images"><ul>
+		<li><img src="data2/images/6.png" alt="6" title="6" id="wows2_0"/></li>
+		<li><img src="data2/images/7.png" alt="7" title="7" id="wows2_1"/></li>
+		<li><img src="data2/images/8.jpg" alt="8" title="8" id="wows2_2"/></li>
+		<li><img src="data2/images/3.jpg" alt="3" title="3" id="wows2_3"/></li>
+		<li><img src="data2/images/1.jpg" alt="1" title="1" id="wows2_4"/></li>
+		<li><img src="data2/images/2.jpg" alt="2" title="2" id="wows2_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data2/images/4.png" alt="wow slider" title="4" id="wows2_6"/></a></li>
+		<li><img src="data2/images/5.png" alt="5" title="5" id="wows2_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="6"><span><img src="data2/tooltips/6.png" alt="6"/>1</span></a>
+		<a href="#" title="7"><span><img src="data2/tooltips/7.png" alt="7"/>2</span></a>
+		<a href="#" title="8"><span><img src="data2/tooltips/8.jpg" alt="8"/>3</span></a>
+		<a href="#" title="3"><span><img src="data2/tooltips/3.jpg" alt="3"/>4</span></a>
+		<a href="#" title="1"><span><img src="data2/tooltips/1.jpg" alt="1"/>5</span></a>
+		<a href="#" title="2"><span><img src="data2/tooltips/2.jpg" alt="2"/>6</span></a>
+		<a href="#" title="4"><span><img src="data2/tooltips/4.png" alt="4"/>7</span></a>
+		<a href="#" title="5"><span><img src="data2/tooltips/5.png" alt="5"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine2/wowslider.js"></script>
+<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+<br>
+
+
+<div> 
+ <ul data-role="listview" data-theme="c" class="ui-listview ui-group-theme-c">
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pag1Avanzadas" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2> Primera y Segunda Forma Normal </h2>
+  </a>
+  </li>
+  
+   <li class="ui-first-child ui-last-child">
+  <a href="#Pag2Avanzadas" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2> Tercera y Cuarta Forma Normal </h2>
+  </a>
+  </li>
+  
+   <li class="ui-first-child ui-last-child">
+  <a href="#Pag3Avanzadas" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2> Quinta Forma Normal </h2>
+  </a>
+  </li>
+  </ul>
+  <br>
+  <br>
+  
+  <ul data-role="controlgroup" data-type="vertical" data-theme="d">
+ <li class="ui-first-child ui-last-child">
+ <a href="https://www.youtube.com/watch?v=bO18omSzeR4" target="_self" data-role="button"> Video: "Formalización de una Base de Datos" </a> </li>
+
+</ul>
+  
+  
+  
+  </div>
+  </div>
+</div>
+</div>
+
+<div> 
+ <ul data-role="listview" data-theme="c" class="ui-listview ui-group-theme-c">
+   <li class="ui-first-child ui-last-child">
+  <a href="#Pag4Avanzadas" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2> Consultas SQL </h2>
+  <p> ¿Cómo realizar consultas en SQL? </p>
+  </a>
+  </li>
+  
+   <li class="ui-first-child ui-last-child">
+  <a href="#Pag5Avanzadas" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2> Condiciones en SQL </h2>
+  <p> ¿Qué condiciones puedo usar en SQL? </p>
+  </a>
+  </li>
+  </ul>
+  </div>
+  
+  <p> Para realizar consultas en SQL con Microsoft Access, visualiza el siguiente video: </p>
+  
+  <ul data-role="controlgroup" data-type="vertical" data-theme="d">
+ <li class="ui-first-child ui-last-child">
+ <a href="https://www.youtube.com/watch?v=bO18omSzeR4" target="_self" data-role="button"> Video: "Consulta SQL En Microsoft Access" </a> </li>
+
+</ul>
+  
+
+ <div data-role="footer" align="center" data-theme="c" data-position="fixed">
+ <h4>App10 Jesús Danyael Camacho Carreto </h4>
+ <img src="res/android/slide.png" width="56" height="46">
+ </div>
+ </div>
+ 
+<div data-role="page" id="Pag1Avanzadas" data-add-back-btn="true" data-theme="b">
+ 	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1> Primera y Segunda Forma Normal </h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ 
+ <h3>PRIMERA FORMA NORMAL (1FN)</h3>
+
+<p>Se refiere a cualquier archivo que posea un valor por campo; la relación entre la llave primaria de un archivo y cada uno de los otros campos debe ser de uno a uno.
+De una manera práctica, debemos eliminar grupos repetidos de datos, hasta que cada dato tenga una llave primaria para cada ocurrencia.</p>
+
+
+<h3>SEGUNDA FORMA NORMAL (2FN). </h3>
+<p>Eliminar atributos que dependen solamente de una parte del identificador único
+Si una entidad tiene un identificador único compuesto de más de un atributo y/o relación, y si otro atributo depende sólo de una de las partes de este identificador compuesto, entonces el atributo, y la parte del identificador del que depende, deberán formar la base de una nueva entidad. La entidad nueva, se identifica por la parte emigrada del identificador único de la entidad original, y tiene una relación de uno a varios unida con la entidad original.</p>
+
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image61','','imagenes/2.jpg',1)"><img src="imagenes/1.jpg" width="70%" height="60%" id="Image61"></a> </div>
+ </div>
+ 
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+ <h4>App10 Jesús Danyael Camacho Carreto </h4>
+ <img src="res/android/slide.png" width="56" height="46">
+ </div>
+ </div>
+ 
+ 
+<div data-role="page" id="Pag2Avanzadas" data-add-back-btn="true" data-theme="b">
+ 	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1> Tercera y Cuarta Forma Normal </h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ 
+<h3> TERCERA FORMA NORMAL (3FN) </h3> 
+<p>Eliminar los atributos dependientes de atributos que no son parte del identificador único.
+Un archivo en la segunda forma normal también estará en la tercera forma normal si un campo no-llave depende de otro campo no-llave.</p>
+
+
+<h3>CUARTA FORMA NORMAL (4FN)</h3>
+<p>Una relación está en 4 FN si ya está en la 3FN y además no existen dependencias multivaluadas. Es decir, no se aceptan atributos que dependan de un multivalor.</p>
+ 
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image62','','imagenes/4.png',1)"><img src="imagenes/3.jpg" width="70%" height="60%" id="Image62"></a> </div>
+ </div>
+ 
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+ <h4>App10 Jesús Danyael Camacho Carreto </h4>
+ <img src="res/android/slide.png" width="56" height="46">
+ </div>
+ </div>
+  
+<div data-role="page" id="Pag3Avanzadas" data-add-back-btn="true" data-theme="b">
+ 	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1> Quinta Forma Normal </h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ 
+<h3> Quinta Forma Normal: 5FN</h3>
+
+<P>Una relación está en 5FN si está en 4FN y además no existen restricciones impuestas por el creador de la BD. Una restricción de este tipo puede ser por ejemplo que una tabla se divida en subtablas. Esta forma normal tiene poca aplicación práctica porque dificulta el diseño ya que genera un número enorme de tablas.</P>
+
+<img src="imagenes/5.png" width="70%" height="60%">
+ 
+ 
+ </div>
+ </div>
+ 
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+ <h4>App10 Jesús Danyael Camacho Carreto </h4>
+ <img src="res/android/slide.png" width="56" height="46">
+ </div>
+ </div>
+ 
+<div data-role="page" id="Pag4Avanzadas" data-add-back-btn="true" data-theme="b">
+ 	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1> Consultas SQL </h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <H2> Comandos Generales Para Consultas SQL </H2>
+ 
+ <p> INSERT: Inserta filas en una tabla.</p>
+<p>SELECT: muestra información sobre los datos almacenados en la base de datos. Dicha información puede pertenecer a una o varias tablas.</p>
+<p>UPDATE: Actualiza información de una tabla. </p>
+<p>DELETE: Borra filas de una tabla.</p>
+
+<h3> Nombres de campos </h3>
+<p>Se puede anteponer el nombre de la tabla al nombre de las columnas, utilizando el formato Tabla.Columna. Además de nombres de columnas, en esta lista se pueden poner constantes, expresiones aritméticas, y funciones, para obtener campos calculados de manera dinámica.</p>
+
+<p>Si queremos que nos devuelva todos los campos de la tabla utilizamos el comodín “*” (asterisco).</p>
+
+<h3> AS </h3>
+Permite renombrar columnas si lo utilizamos en la cláusula SELECT, o renombrar tablas si lo utilizamos en la cláusula FROM, es opcional. 
+
+<h3>FROM</h3>
+<p>Esta cláusula permite indicar las tablas o vistas de las cuales vamos a obtener la información. De momento veremos ejemplos para obtener información de una sola tabla.</p>
+
+<h3> WHERE</h3>
+<P>Especifica la condición de filtro de las filas devueltas, se utiliza cuando no se desea que se devuelvan todas las filas de una tabla, sino sólo las que cumplen ciertas condiciones. Lo habitual es utilizar esta cláusula en la mayoría de las consultas.</P>
+
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image68','','imagenes/7.png',1)"><img src="imagenes/6.png" width="70%" height="50%" id="Image68"></a> </div>
+ </div>
+ 
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+ <h4>App10 Jesús Danyael Camacho Carreto </h4>
+ <img src="res/android/slide.png" width="56" height="46">
+ </div>
+ </div>
+ 
+<div data-role="page" id="Pag5Avanzadas" data-add-back-btn="true" data-theme="b">
+ 	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1> Condiciones en SQL </h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <p>Son expresiones lógicas a comprobar para la condición de filtro, que tras su resolución devuelven para cada fila TRUE o FALSE, en función de que se cumplan o no. Se puede utilizar cualquier expresión lógica y en ella utilizar diversos operadores como:</p>
+ 
+ <P>> (Mayor)</P>
+<P>>= (Mayor o igual)</P>
+<p>< (Menor)/<p>
+<p><= (Menor o igual)</p>
+<p>= (Igual)</p>
+<p><> o != (Distinto)</p>
+<p>IS [NOT] NULL (para comprobar si el valor de una columna es o no es nula, es decir, si contiene o no contiene algún valor)</p>
+
+<p> LIKE: para la comparación de un modelo. Para ello utiliza los caracteres comodín especiales: “%” y “_”. Con el primero indicamos que en su lugar puede ir cualquier cadena de caracteres, y con el segundo que puede ir cualquier carácter individual (un solo carácter). </p>
+
+<p>BETWEEN: para un intervalo de valores. </p>
+
+<p>IN( ): para especificar una relación de valores concretos.</p>
+ 
+ <img src="imagenes/8.jpg" width="70%" height="50%">
+ 
+ </div>
+ </div>
+ 
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+ <h4>App10 Jesús Danyael Camacho Carreto </h4>
+ <img src="res/android/slide.png" width="56" height="46">
+ </div>
+ </div>
+ 
+
+<div data-role="page" id="Pagina3"data-add-back-btn="true" data-theme="d">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="d">
+<h1> Aplicación 10 Datos del Diseñador </h1>
+</div>
+
+<div data-role="main" class="ui-content" align="center">
+
+<P><B>NOMBRE DEL ALUMNO: JESÚS DANYAEL CAMACHO CARRETO</B></P>
+
+<P><B>SEMESTRE Y GRUPO: "4G"</B></P>
+
+<P><B>SUBMÓDULO: DESARROLLA APLICACIONES MÓVILES</B></P>
+
+<P><B> DOCENTE: JOSÉ ANTONIO GOMEZ HERNÁNDEZ</B></P>
+
+<div align="center">
+<img src="imagenes/danya.jpg" width="60%" height="60%">
+</div>
+<br>
+
+
+
+  <div data-role="footer" align="center" data-theme="d" data-position="fixed">
+ <h4>App10 Jesús Danyael Camacho Carreto </h4>
+ <img src="res/android/slide.png" width="56" height="46">
+ </div>
+ </div>
+ </div>
+
+</body>
+</html>
